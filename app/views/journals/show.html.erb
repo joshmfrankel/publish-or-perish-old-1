@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @journal.title %>
+</p>
+
+<p>
+  <strong>Editor:</strong>
+  <%= @journal.editor %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @journal.description %>
+</p>
+
+<p>
+  <strong>Impact factor:</strong>
+  <%= @journal.impact_factor %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @journal.approved %>
+</p>
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>
