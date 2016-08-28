@@ -2,15 +2,23 @@
 
 Making finding publishable journals simple to find for researchers, students, and others.
 
-## Development Phases
+## Todo
 
 1. User authentication
-  Login, Register, Logout, Devise
-2. User Roles
-  user, moderator, admin
-3. User authorization
-  Permission class and methods
-  DSL
-4. ActiveAdmin for user management
-5. Journal model
+- [x] devise
+- [] routes
+2. Authorization
+- [] Pundit
+- [] user, moderator, admin
+3. Database
+- [] Journal
+title, editor, description, impact_factor
+has_many methodologies, through: tags
+- [] Methodologies
+name
+- [] Tags
+4. Searchkick
+- searching
+- indexing
+- cacheing
 
