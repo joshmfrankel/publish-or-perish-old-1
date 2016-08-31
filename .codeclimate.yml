@@ -24,6 +24,15 @@ engines:
     enabled: true
   reek:
      enabled: true
+     checks:
+      TooManyStatements:
+        enabled: true
+        max_statements: 12
+      DuplicateMethodCall:
+        enabled: true
+        max_calls: 2
+      IrresponsibleModule:
+        enabled: false
   scss-lint:
      enabled: true
 ratings:
