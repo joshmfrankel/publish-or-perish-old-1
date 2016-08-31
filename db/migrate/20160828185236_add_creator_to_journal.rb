@@ -1,5 +1,6 @@
 class AddCreatorToJournal < ActiveRecord::Migration
   def change
-    add_column :journals, :creator_id, :integer
+    add_reference :journals, :creator, references: :users, index: true
+    add_foreign_key :journals, :users, column: :creator_id
   end
 end

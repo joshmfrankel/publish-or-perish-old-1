@@ -1,0 +1,37 @@
+---
+engines:
+  bundler-audit:
+    enabled: true
+  brakeman:
+    enabled: true
+    checks:
+      mass_assign_call:
+        enabled: false # We use Strong Parameters instead
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+        #mass_threshold: 30
+      - javascript
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+  reek:
+     enabled: true
+  scss-lint:
+     enabled: true
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.go"
+exclude_paths:
+- spec/**/*
+- "**/vendor/**/*"
