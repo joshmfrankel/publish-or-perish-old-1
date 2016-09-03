@@ -34,12 +34,12 @@ describe JournalsController do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new journal as @journal" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:journal)).to be_a_new(Journal)
-    end
-  end
+  # describe "GET #new" do
+  #   it "assigns a new journal as @journal" do
+  #     get :new, params: {}, session: valid_session
+  #     expect(assigns(:journal)).to be_a_new(Journal)
+  #   end
+  # end
 
   describe "GET #edit" do
     it "assigns the requested journal as @journal" do
