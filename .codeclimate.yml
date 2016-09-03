@@ -23,8 +23,8 @@ engines:
   rubocop:
     enabled: true
   reek:
-     enabled: true
-     checks:
+    enabled: true
+    checks:
       TooManyStatements:
         enabled: true
         max_statements: 12
@@ -33,6 +33,8 @@ engines:
         max_calls: 2
       IrresponsibleModule:
         enabled: false
+    exclude_paths:
+      - db/migrate/*
   scss-lint:
      enabled: true
 ratings:
